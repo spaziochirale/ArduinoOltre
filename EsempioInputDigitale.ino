@@ -10,7 +10,7 @@
 
 void setup() {
   pinMode(10,INPUT); // Ipotizziamo che sul PIN 10 vi sia un sensore digitale di tipo on/off
-  Serial.begin(9600); // Inizializzo la porta seriale di Arduino impostando la velocità 3600 baud
+  Serial.begin(9600); // Inizializzo la porta seriale di Arduino impostando la velocità 9600 baud
 }
 
 void loop() {
