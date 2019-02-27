@@ -18,8 +18,8 @@ void buttonPressed() {
     {stato = !stato;
      contatore++;
     }
-  if (stato == 1) digitalWrite(LED, HIGH);
-  else digitalWrite(LED, LOW);
+  
+  digitalWrite(LED_BUILTIN, stato);
   tempo = millis();
 }
 
