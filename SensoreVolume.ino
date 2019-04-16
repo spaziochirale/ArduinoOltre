@@ -43,6 +43,6 @@ void loop() {
   // Il volume è la differenza tra il valore massimo e minimo della pressione acustica 
   // misurata nell'intervallo. Lo calcolo e scrivo il risultato sul terminale
   volume =pMax-pMin;
-  Serial.print("Volume rilevato: ")
+  Serial.print("Volume rilevato: ");
   Serial.println(volume);
 }
