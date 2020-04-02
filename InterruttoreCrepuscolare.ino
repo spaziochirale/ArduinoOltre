@@ -9,7 +9,7 @@
  */
  
 void setup() {
-  pinMode(13,OUTPUT);
+  pinMode(8,OUTPUT); // Utilizziamo il PIN 8, ma lo sketch può essere modificato per funzionare su qualunque PIN
   Serial.begin(9600); 
 }
 
@@ -21,13 +21,13 @@ void loop() {
   Serial.print("\t");
 
   // Modificare il test in base al proprio circuito e alle prove di lettura
-  if (valore < 400) { 
+  if (valore < 500) { 
     Serial.println("Accendo la luce");
-    digitalWrite(13,HIGH);
+    digitalWrite(8,HIGH);
   }
   else {
     Serial.println("Spengo la luce");
-    digitalWrite(13,LOW);
+    digitalWrite(8,LOW);
   }
   delay(200); 
 }
